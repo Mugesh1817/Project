@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Buy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg" id="top">   
+        <div class="container">
+          <a class="navbar-brand" href="#">TechMobi</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarcontent">
+            <span class="navbar-toggler-icon"></span>
+           </button>
+          <form class="d-flex">
+            <input class="form-control ms-5" type="search" placeholder="Search Mobile...">
+          </form>
+          <div class="collapse navbar-collapse" id="navbarcontent">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#top">Home</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#products">Product</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+            <a href="#" class="carticon"><i class="fa fa-shopping-cart"></i></a>
+            <button class="btn" data-bs-toggle="modal" data-bs-target="#signing">Sign In</button>
+            <button class="btn ms-1" data-bs-toggle="modal" data-bs-target="#registration">Register</button>
+          </div>
+        </div>
+      </nav>
+       
+      <form>
+      <div class="modal fade" id="registration">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="heading modal-title">Registration Form</h3>
+            </div>
+            <div class="regform modal-body">
+                <div class="input">
+                      <label class="txt" for="name">Name:</label>
+                    <input type="text" placeholder="Enter Your Name" name="name">
+                  </div>
+                  <div class="input">
+                       <label class="txt" for="name">Mobile Number:</label>
+                       <input type="number" placeholder="Enter Mobile Number" name="number">
+                  </div>
+                  <div class="input">
+                      <label class="txt" for="name">Create Password:</label>
+                      <input type="password" placeholder="Create New Password" name="password">
+                   </div>
+                   <div class="radio">
+                      <input type="radio" name="gender" id="male">
+                      <label for="male">Male</label>
+                       <input type="radio" name="gender" id="female">
+                       <label for="female">Female</label>
+                   </div>
+                   <div class="reg">
+                     <button type="submit">Register</button>
+                   </div>
+            </div>
+            <div class="cancel modal-footer">
+              <button type="button" class="btn btn-danger text-light" data-bs-dismiss="modal">Cancel</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      </form>
+
+      <form>
+        <div class="modal fade" id="signing">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="heading modal-title">Login Form</h3>
+              </div>
+              <div class="regform modal-body">
+                  <div class="input">
+                        <label class="txt" for="name">Name:</label>
+                      <input type="text" placeholder="Enter Your Name" name="name">
+                    </div>
+                    <div class="input">
+                        <label class="txt" for="name">Enter Password:</label>
+                        <input type="password" placeholder="Enter Your Password" name="password">
+                     </div>
+                     <div class="reg">
+                       <button type="submit">Login</button>
+                     </div>
+              </div>
+              <div class="cancel modal-footer">
+                <button type="button" class="btn btn-danger text-light" data-bs-dismiss="modal">Cancel</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        </form>
+
+  <section id="demo" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  <!-- Indicators/dots -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+  </div>
+
+  <!-- The slideshow/carousel -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <a href="#mi11pro"><img src="./images/mi11offer.jpg" alt="Mi 11 Offer" class="d-block w-100"></a>
+    </div>
+    <div class="carousel-item">
+      <a href="#onepluses"><img src="./images/oneplusoffer.jpg" alt="Oneplus Offers" class="d-block w-100"></a>
+    </div>
+    <div class="carousel-item">
+     <a href="products"><img src="./images/mobilesbanneroffer.jpg" alt="Mobiles Offers" class="d-block w-100"></a>
+    </div>
+    </div>
+
+  <!-- Left and right controls/icons -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</section>
+
+<hr class="firstline">
+<br>
+
+       <div id="products">
+        <div class="container ">
+            <h1 class="text-center pt-5">Our Products</h1>
+            <h3 class="mobtopic container mb-4">Mobiles</h3>
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-6">
+                    <a href="#">
+                    <div class="card">
+                      <i class="fa fa-heart" style="color: white; font-size: 20px;"></i>
+                        <img src="images/iphone14promax(black).png" class="card-img-top pt-4">
+                         <div class="card-body">
+                            <h4 class="card-title">iPhone 14 Pro Max (256 GB) - Black</h4><br>
+                            <a style="color: green; font-weight: 500;"><del>₹ 1,49,999</del> &nbsp<span style="color: black;">8% Off</span>&nbsp &nbsp ₹ 1,35,999</a><br><br>
+                            <a href="#" class="btn buy mt-3">Buy Now</a>
+                         </div>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-6">
+                    <a href="#">
+                    <div class="card">
+                      <i class="fa fa-heart" style="color: white; font-size: 20px;"></i>
+                        <img src="images/iphone13pro(blue).png" class="card-img-top pt-4">
+                         <div class="card-body">
+                            <h4 class="card-title">iPhone 13 Pro (128 GB) - Sky Blue</h4><br>
+                            <a style="color: green; font-weight: 500;"><del>₹ 1,19,999</del> &nbsp<span style="color: black;">9% Off</span>&nbsp &nbsp   ₹ 1,09,999</a><br><br>
+                            <a href="#" class="btn buy mt-3">Buy Now</a>
+                         </div>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-6">
+                    <a href="#">
+                    <div class="card">
+                      <i class="fa fa-heart" style="color: white; font-size: 20px;"></i>
+                        <img src="images/iphone13(blue).png" class="card-img-top pt-4">
+                         <div class="card-body">
+                            <h4 class="card-title">iPhone 13 (128 GB) - Blue</h4><br>
+                            <a style="color: green; font-weight: 500;"><del>₹ 69,999</del> &nbsp<span style="color: black;">16% Off</span>&nbsp &nbsp ₹ 58,499</a><br><br>
+                            <a href="#" class="btn buy mt-3">Buy Now</a>
+                         </div>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-6">
+                    <a href="#">
+                    <div class="card">
+                      <i class="fa fa-heart" style="color: white; font-size: 20px;"></i>
+                        <img src="images/iphone12(purple).png" class="card-img-top pt-4">
+                         <div class="card-body">
+                            <h4 class="card-title">iPhone 12 (128 GB) - Purple</h4><br>
+                            <a style="color: green; font-weight: 500;"><del>₹ 64,999</del> &nbsp<span style="color: black;">13% Off</span>&nbsp &nbsp ₹ 56,499</a><br><br>   
+                            <a href="#" class="btn buy mt-3">Buy Now</a>
+                         </div>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-6">
+                    <a href="#">
+                    <div class="card">
+                      <i class="fa fa-heart" style="color: white; font-size: 20px;"></i>
+                        <img src="images/vivox80pro(black).png" class="card-img-top pt-4">
+                         <div class="card-body">
+                            <h4 class="card-title">Vivo X80 Pro (256 GB) - Black</h4><br>
+                            <a style="color: green; font-weight: 500;"><del>₹ 86,999</del> &nbsp<span style="color: black;">8% Off</span>&nbsp &nbsp ₹ 72,499</a><br><br>
+                            <a href="#" class="btn buy mt-3">Buy Now</a>
+                         </div>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-6">
+                    <a href="#">
+                        <div class="card">
+                          <i class="fa fa-heart" style="color: white; font-size: 20px;"></i>
+                        <img src="images/vivox70pro(black).png" class="card-img-top pt-3">
+                         <div class="card-body">
+                            <h4 class="card-title">Vivo X70 Pro (128 GB) - Black</h4><br>
+                            <a style="color: green; font-weight: 500;"><del>₹ 49,999</del> &nbsp<span style="color: black;">16% Off</span>&nbsp &nbsp ₹ 41,999</a><br><br>
+                            <a href="#" class="btn buy mt-3">Buy Now</a>
+                        </div>
+                    </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-6">
+                    <a href="#">
+                    <div class="card">
+                      <i class="fa fa-heart" style="color: white; font-size: 20px;"></i>
+                        <img src="images/vivov25pro(blue).png" class="card-img-top pt-4"">
+                         <div class="card-body">
+                            <h4 class="card-title">Vivo V25 Pro (8GB + 128GB) - Blue</h4><br>
+                            <a style="color: green; font-weight: 500;"><del>₹ 39,999</del> &nbsp<span style="color: black;">26% Off</span>&nbsp &nbsp ₹ 29,500</a><br><br>
+                            <a href="#" class="btn buy mt-3">Buy Now</a>
+                         </div>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-6">
+                    <a href="#">
+                    <div class="card">
+                      <i class="fa fa-heart" style="color: white; font-size: 20px;"></i>
+                        <img src="images/vivov20(skybluegradient).png" class="card-img-top pt-4">
+                         <div class="card-body">
+                            <h4 class="card-title">Vivo V20 (8GB + 128GB) - Sunset Melody</h4><br>
+                            <a style="color: green; font-weight: 500;"><del>₹ 27,900</del> &nbsp<span style="color: black;">10% Off</span>&nbsp &nbsp ₹ 24,900</a><br><br>
+                            <a href="#" class="btn buy mt-3">Buy Now</a>
+                         </div>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-6">
+                  <a href="#">
+                  <div class="card">
+                    <i class="fa fa-heart" style="color: white; font-size: 20px;"></i>
+                      <img src="images/redminote12pro(blue).png" class="card-img-top pt-3">
+                       <div class="card-body">
+                          <h4 class="card-title">Redmi Note 12 Pro (8GB + 256GB) - Blue</h4><br>
+                          <a style="color: green; font-weight: 500;"><del>₹ 31,999</del> &nbsp<span style="color: black;">15% Off</span>&nbsp &nbsp ₹ 26,999</a><br><br>
+                          <a href="#" class="btn buy mt-3">Buy Now</a>
+                       </div>
+                  </div>
+                  </a>
+              </div>
+
+              <div class="col-lg-3 col-md-4 col-6">
+                <a href="#">
+                <div class="card" id="mi11pro">
+                  <i class="fa fa-heart" style="color: white; font-size: 20px;"></i>
+                    <img src="images/mi11xpro.png" class="card-img-top pt-3">
+                     <div class="card-body">
+                        <h4 class="card-title">Xiomi 11X Pro (8GB + 128GB) - Black</h4><br>
+                        <a style="color: green; font-weight: 500;"><del>₹ 39,999</del> &nbsp<span style="color: black;">23% Off</span>&nbsp &nbsp ₹ 30,499</a><br><br>
+                        <a href="#" class="btn buy mt-3">Buy Now</a>
+                     </div>
+                </div>
+                </a>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-6">
+              <a href="#">
+              <div class="card">
+                <i class="fa fa-heart" style="color: white; font-size: 20px;"></i>
+                  <img src="images/redminote10promax(orange).png" class="card-img-top pt-4">
+                   <div class="card-body">
+                      <h4 class="card-title">Redmi Note 10 Pro Max(6GB + 128GB) - Bronze</h4><br>
+                      <a style="color: green; font-weight: 500;"><del>₹ 22,999</del> &nbsp<span style="color: black;">8% Off</span>&nbsp &nbsp ₹ 21,999</a>
+                      <a href="#" class="btn buy mt-3">Buy Now</a>
+                   </div>
+              </div>
+              </a>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-6">
+            <a href="#">
+            <div class="card">
+              <i class="fa fa-heart" style="color: white; font-size: 20px;"></i>
+                <img src="images/redminote9pro(green).png" class="card-img-top pt-4">
+                 <div class="card-body">
+                    <h4 class="card-title">Redmi Note 9 Pro (8GB + 128GB) - Green</h4><br>
+                    <a style="color: green; font-weight: 500;"><del>₹ 14,999</del> &nbsp<span style="color: black;">14% Off</span>&nbsp &nbsp ₹ 18,999</a><br><br>
+                    <a href="#" class="btn buy mt-3">Buy Now</a>
+                 </div>
+            </div>
+            </a>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-6" id="onepluses">
+          <a href="#">
+          <div class="card">
+            <i class="fa fa-heart" style="color: white; font-size: 20px;"></i>
+              <img src="images/oneplus11(green).png" class="card-img-top pt-3">
+               <div class="card-body">
+                  <h4 class="card-title">One Plus 11 (8GB + 256GB) - Green</h4><br>
+                  <a style="color: green; font-weight: 500;"><del>₹ 57,999</del> &nbsp<span style="color: black;">4% Off</span>&nbsp &nbsp ₹ 47,499</a><br><br>
+                  <a href="#" class="btn buy mt-3">Buy Now</a>
+               </div>
+          </div>
+          </a>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-6">
+        <a href="#">
+        <div class="card">
+          <i class="fa fa-heart" style="color: white; font-size: 20px;"></i>
+            <img src="images/oneplus9pro(black).png" class="card-img-top pt-3">
+             <div class="card-body">
+                <h4 class="card-title">One Plus 9 Pro (8GB + 256GB) - Black</h4><br>
+                <a style="color: green; font-weight: 500;"><del>₹ 64,999</del> &nbsp<span style="color: black;">23% Off</span>&nbsp &nbsp ₹ 49,999</a><br><br>
+                <a href="#" class="btn buy mt-3">Buy Now</a>
+             </div>
+        </div>
+        </a>
+    </div>
+
+    <div class="col-lg-3 col-md-4 col-6">
+      <a href="#">
+      <div class="card">
+        <i class="fa fa-heart" style="color: white; font-size: 20px;"></i>
+          <img src="images/oneplusnordce3lite(green).png" class="card-img-top pt-3">
+           <div class="card-body">
+              <h4 class="card-title">One Plus Nord CE 3 Lite (8GB + 128GB) - Green</h4><br>
+              <a style="color: green; font-weight: 500;"><del>₹ 19,499</del> &nbsp<span style="color: black;">12% Off</span>&nbsp &nbsp ₹ 17,749</a><br><br>
+              <a href="#" class="btn buy mt-3">Buy Now</a>
+           </div>
+      </div>
+      </a>
+  </div>
+
+  <div class="col-lg-3 col-md-4 col-6">
+    <a href="#">
+    <div class="card">
+      <i class="fa fa-heart" style="color: white; font-size: 20px;"></i>
+        <img src="images/oneplusnordce2lite(skyblue).png" class="card-img-top pt-4 ">
+         <div class="card-body">
+            <h4 class="card-title">One Plus Nord CE 3 Lite (8GB + 128GB) - Blue</h4><br>
+            <a style="color: green; font-weight: 500;"><del>₹ 17,999</del> &nbsp<span style="color: black;">24% Off</span>&nbsp &nbsp ₹ 12,999</a><br><br>
+            <a href="#" class="btn buy mt-3">Buy Now</a>
+         </div>
+    </div>
+    </a>
+  </div>
+
+<div class="col-lg-3 col-md-4 col-6">
+  <a href="#">
+  <div class="card">
+    <i class="fa fa-heart" style="color: white; font-size: 20px;"></i>
+      <img src="images/samsungs23ultra(black).jpg" class="card-img-top pt-4">
+       <div class="card-body">
+          <h4 class="card-title">Samsung S23 Ultra (12GB + 256GB) - Black</h4><br>
+          <a style="color: green; font-weight: 500;"><del>₹ 1,49,999</del> &nbsp<span style="color: black;">16% Off</span>&nbsp &nbsp ₹ 1,34,999</a><br><br>
+          <a href="#" class="btn buy mt-3">Buy Now</a>
+       </div>
+  </div>
+  </a>
+</div>
+
+<div class="col-lg-3 col-md-4 col-6">
+  <a href="#">
+  <div class="card">
+    <i class="fa fa-heart" style="color: white; font-size: 20px;"></i>
+      <img src="images/samsungs22(green).jpg" class="card-img-top pt-4">
+       <div class="card-body">
+          <h4 class="card-title">Samsung S22 (8GB + 128GB) - Green</h4><br>
+          <a style="color: green; font-weight: 500;"><del>₹ 1,31,999</del> &nbsp<span style="color: black;">18% Off</span>&nbsp &nbsp ₹ 1,10,999</a><br><br>
+          <a href="#" class="btn buy mt-3">Buy Now</a>
+       </div>
+  </div>
+  </a>
+</div>
+
+<div class="col-lg-3 col-md-4 col-6">
+  <a href="#">
+  <div class="card">
+    <i class="fa fa-heart" style="color: white; font-size: 20px;"></i>
+      <img src="images/samsungs21fe(green).jpg" class="card-img-top pt-3">
+       <div class="card-body">
+          <h4 class="card-title">Samsung S21 (8GB + 128GB) - Green</h4><br>
+          <a style="color: green; font-weight: 500;"><del>₹ 74,999</del> &nbsp<span style="color: black;">28% Off</span>&nbsp &nbsp ₹ 51,499</a><br><br>
+          <a href="#" class="btn buy mt-3">Buy Now</a>
+       </div>
+  </div>
+  </a>
+</div>
+
+<div class="col-lg-3 col-md-4 col-6">
+  <a href="#">
+  <div class="card">
+    <i class="fa fa-heart" style="color: white; font-size: 20px;"></i>
+      <img src="images/samsungm13(brown).png" class="card-img-top pt-4 ">
+       <div class="card-body">
+          <h4 class="card-title">Samsung M13 (8GB + 128GB) - Brown</h4><br>
+          <a style="color: green; font-weight: 500;"><del>₹ 17,999</del> &nbsp<span style="color: black;">24% Off</span>&nbsp &nbsp ₹ 12,999</a><br><br>
+          <a href="#" class="btn buy mt-3">Buy Now</a>
+       </div>
+  </div>
+  </a>
+</div>
+
+            </div>
+        </div>
+      </div>
+
+      <hr class="firstline"><br>
+
+          <div class="container">
+            <a href="gadgets.html"><img src="./images/accessoriesoffer.jpg" alt="Oneplus Offers" class="d-block w-100"></a>
+          </div>
+      
+      <hr class="firstline">
+
+      <div class="container" id="about">
+        <h1 class="container">About</h1>
+        <p class="abt">TechMobi is the Largest Tech Retailer in Tamilnadu, 
+          spanning across 200+ showrooms in and around Tamil Nadu and famous for their touch & feel experience. 
+          TechMobi's Mobile Shopping platform www.techmobi.com caters to customers across India where Customers can Comfortably 
+          Order their devices with just a tap and get them delivered Safely with delivery options such as 2 Hours Delivery, 
+          Same Day Delivery, Next Day Delivery, and a Pickup at the Store option based on their location. 
+          Having served over 1 Crore+ Happy Customers, TechMobi takes pride in being India's leading retailer for Top Brands 
+          like Apple, Samsung, Oppo, Vivo, Xiaomi, OnePlus, Redmi, Realme, Nokia, etc.</p>
+      </div>
+
+      <hr class="firstline">
+
+      <div class="contacting container col-lg-2 col-md-6 col-4" id="contact">
+        <a href="#"><i class="fa fa-phone"></i></a>
+        <a href="#"> <i class="fa fa-whatsapp"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-youtube"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+      </div>
+       
+      <br><br><br>
+      <div class="contactshop row container-fluid">
+        <div class="contactinfo col text-center">
+          <h3 class="text-light">Contact</h3>
+          <h5>Head Office,</h5>
+          <h6>TechMobi Mobile Shop,</h6>
+          <h6>No.3, 1st Street, Thirunagar,</h6>
+        <h6>Vadapalani, Chennai-600 026.</h6>
+        </div>
+        <div class="support col ">
+          <h3 class="text-light d-flex">Support</h3>
+          <h6>Contact Us</h6>
+          <h6>Site Map</h6>
+          <h6>One Assist</h6>
+        </div>
+        <div class="policies col">
+           <h3 class="text-light d-flex">Policies</h3>
+           <h6>Terms & Conditions</h6>
+           <h6>Privacy Policy</h6>
+            <h6>Return, Replacement & Refund</h6>
+        </div>
+        <div class="knowmore col">
+          <h3 class="text-light d-flex">Know More</h3>
+          <h6>About Us</h6>
+          <h6>Our Stores</h6>
+          <h6>Service Centres</h6>
+        </div>
+        <div class="follow col">
+          <h3 class="text-light">Follow us</h3>
+          <a href="#" class="fa fa-whatsapp"></a>
+          <a href="#" class="fa fa-instagram"></a>
+          <a href="#" class="fa fa-facebook" style="padding-left: 14px; padding-right: 14px;"></a>
+          <a href="#" class="fa fa-youtube"></a>
+          <a href="#" class="fa fa-twitter"></a>
+        </div>
+      </div>
+
+      <hr class="firstline">
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>    
